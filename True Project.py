@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 t=rd.uniform(0,0.5)
 #importing datas
 
-aapl=pd.read_csv(r"G:\stock csv\AAPL.csv")
-goog=pd.read_csv(r"G:\stock csv\GOOG.csv")
-msft=pd.read_csv(r"G:\stock csv\MSFT.csv")
-tsla=pd.read_csv(r"G:\stock csv\TSLA.csv")
-amzn=pd.read_csv(r"G:\stock csv\AMZN.csv")
+aapl=pd.read_csv(r"stock csv\AAPL.csv")
+goog=pd.read_csv(r"stock csv\GOOG.csv")
+msft=pd.read_csv(r"stock csv\MSFT.csv")
+tsla=pd.read_csv(r"stock csv\TSLA.csv")
+amzn=pd.read_csv(r"stock csv\AMZN.csv")
 
 ##cleaning datas
 
@@ -54,19 +54,19 @@ print("Duplicated values removed from all datas\n")
 
 #import back into csv
 
-aapl=aapl.to_csv(r"G:\stock csv\AAPLc.csv")
-goog=goog.to_csv(r"G:\stock csv\GOOGc.csv")
-msft=msft.to_csv(r"G:\stock csv\MSFTc.csv")
-tsla=tsla.to_csv(r"G:\stock csv\TSLAc.csv")
-amzn=amzn.to_csv(r"G:\stock csv\AMZNc.csv")
+aapl=aapl.to_csv(r"stock csv\AAPLc.csv")
+goog=goog.to_csv(r"stock csv\GOOGc.csv")
+msft=msft.to_csv(r"stock csv\MSFTc.csv")
+tsla=tsla.to_csv(r"stock csv\TSLAc.csv")
+amzn=amzn.to_csv(r"stock csv\AMZNc.csv")
 tm.sleep(t)
 print("All values Exported\n")
 
-aapl1=pd.read_csv(r"G:\stock csv\AAPLc.csv")
-goog1=pd.read_csv(r"G:\stock csv\GOOGc.csv")
-msft1=pd.read_csv(r"G:\stock csv\MSFTc.csv")
-tsla1=pd.read_csv(r"G:\stock csv\TSLAc.csv")
-amzn1=pd.read_csv(r"G:\stock csv\AMZNc.csv")
+aapl1=pd.read_csv(r"stock csv\AAPLc.csv")
+goog1=pd.read_csv(r"stock csv\GOOGc.csv")
+msft1=pd.read_csv(r"stock csv\MSFTc.csv")
+tsla1=pd.read_csv(r"stock csv\TSLAc.csv")
+amzn1=pd.read_csv(r"stock csv\AMZNc.csv")
 tm.sleep(t)
 print("All values imported from the clean dataset\n")
 
